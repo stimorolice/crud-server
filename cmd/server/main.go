@@ -28,7 +28,7 @@ func (s *Server) Get(ctx context.Context, req *note.GetRequest) (*note.GetRespon
 		Note: &note.Note{
 			Id: req.GetId(),
 			Info: &note.NoteInfo{
-				Title:    gofakeit.BeerMalt(),
+				Title:    "gofakeit.BeerMalt()",
 				Content:  gofakeit.BS(),
 				Author:   gofakeit.Email(),
 				IsPublic: gofakeit.Bool(),
