@@ -17,6 +17,9 @@ const port = ":50051"
 type Server struct {
 	note.UnimplementedV1Server
 }
+type Bruh struct {
+	Some string
+}
 
 func (s *Server) Get(ctx context.Context, req *note.GetRequest) (*note.GetResponse, error) {
 	log.Printf("Note id: %d", req.GetId())
